@@ -1,0 +1,6 @@
+package com.dailycodebuffer.Springboot.tutorial.controller;
+@RestController
+public class HelloController {
+	
+
+}

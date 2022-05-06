@@ -1,0 +1,24 @@
+package com.dailycodebuffer.Springboot.tutorial.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.dailycodebuffer.Springboot.tutorial.entity.Employee;
+import com.dailycodebuffer.Springboot.tutorial.repository.EmployeeRepository;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+	@Autowired
+	private EmployeeRepository employeeRepository;
+	@Override
+	public Employee saveEmployee(Employee employee) {
+		return employeeRepository.save(employee);
+	}
+	@Override
+	public Employee featchById(Long employeeId){
+		return employeeRepository.findAll();
+	}
+
+}

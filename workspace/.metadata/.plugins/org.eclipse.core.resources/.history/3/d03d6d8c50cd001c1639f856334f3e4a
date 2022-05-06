@@ -1,0 +1,5 @@
+package com.dailycodebuffer.Springboot.tutorial.repository;
+
+public class EmployeeRepository {
+
+}
